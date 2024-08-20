@@ -6,4 +6,8 @@
            <li><a href="{{ book.get_absolute_url }}">{{ book.title }}</a></li>
         {% endfor %}
     </ul>
+    <hr>
+    <p>
+        Total number of books: {{ total_of_books }}. Average rating: {{ rating_average.rating__avg }}.
+    </p>
 {% endblock %}
