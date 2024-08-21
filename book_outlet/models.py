@@ -17,6 +17,8 @@ class Book(models.Model):
     is_bestselling = models.BooleanField(default=False)
     slug = models.SlugField(
         default="",
+        blank=True,
+        editable=False,
         null=False,
         db_index=True,
     )
