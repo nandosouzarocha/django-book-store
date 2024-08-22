@@ -15,6 +15,9 @@ class Address(models.Model):
     
     def __str__(self):
         return self.full_address()
+    
+    class Meta:
+        verbose_name_plural = 'Address'
 
 class Author(models.Model):
     first_name = models.CharField(max_length=100)
